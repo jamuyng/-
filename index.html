@@ -5,15 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./myreset.css" />
     <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
       defer
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a76461436c.js"
+      crossorigin="anonymous"
     ></script>
   </head>
   <body>
@@ -52,131 +58,173 @@
       </div>
       <span>닫기</span>
     </div>
-    <div class="tnb">
-      <button class="login">로그인</button>
-      <button class="join">회원가입</button>
-    </div>
-
-    <nav class="hd_wrap">
-      <a href="#" class="logo"><img src="./새 폴더/logo.png" alt="로고" /></a>
-      <ul class="menu">
-        <li class="li">
-          <a href="#">천문대소개</a>
-          <ul class="submenu">
-            <li><a href="#">인사말</a></li>
-            <li><a href="#">현황 및 조직도</a></li>
-            <li><a href="#">시설안내</a></li>
-            <li><a href="#">홍보자료</a></li>
-            <li><a href="#">찾아오시는길</a></li>
-          </ul>
-        </li>
-        <li class="li">
-          <a href="#">이용안내</a>
-          <ul class="submenu">
-            <li><a href="#">관람시간안내</a></li>
-            <li><a href="#">관측프로그램</a></li>
-            <li><a href="#">별음악회/시낭송회</a></li>
-            <li><a href="#">특별프로그램</a></li>
-            <li><a href="#">아스트로갤러리</a></li>
-          </ul>
-        </li>
-        <li class="li">
-          <a href="#">참여마당</a>
-          <ul class="submenu">
-            <li><a href="#">공지사항</a></li>
-            <li><a href="#">질문과 답변</a></li>
-            <li><a href="#">방문후기</a></li>
-            <li><a href="#">천문정보</a></li>
-            <li><a href="#">행사사진</a></li>
-          </ul>
-        </li>
-        <li class="li">
-          <a href="#">예약마당</a>
-          <ul class="submenu">
-            <li><a href="#">단체관람예약</a></li>
-            <li><a href="#">별음악회/시낭송회예약</a></li>
-            <li><a href="#">특별프로그램예약</a></li>
-            <li><a href="#">봉사활동예약</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-    <!-- 슬라이드 -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="slide1">
-            <span>국내 최초</span>로 일반인을 대상으로 <br />
-            공개관측을 시연한 <span>1호 시민천문대</span><br /><br />
-            지자체가 운영하는 천문대 중 <br />
-            가장 많은 방문객이 찾는 천문대입니다.
+    <div class="bgimg">
+      <div class="tnb">
+        <button class="login">로그인</button>
+        <button class="join">회원가입</button>
+      </div>
+      <nav class="hd_wrap">
+        <a href="#" class="logo"><img src="./img/logo.png" alt="로고" /></a>
+        <ul class="menu">
+          <li class="li">
+            <a href="#">천문대소개</a>
+            <ul class="submenu">
+              <li><a href="#">인사말</a></li>
+              <li><a href="#">현황 및 조직도</a></li>
+              <li><a href="#">시설안내</a></li>
+              <li><a href="#">홍보자료</a></li>
+              <li><a href="#">찾아오시는길</a></li>
+            </ul>
+          </li>
+          <li class="li">
+            <a href="#">이용안내</a>
+            <ul class="submenu">
+              <li><a href="#">관람시간안내</a></li>
+              <li><a href="#">관측프로그램</a></li>
+              <li><a href="#">별음악회/시낭송회</a></li>
+              <li><a href="#">특별프로그램</a></li>
+              <li><a href="#">아스트로갤러리</a></li>
+            </ul>
+          </li>
+          <li class="li">
+            <a href="#">참여마당</a>
+            <ul class="submenu">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">질문과 답변</a></li>
+              <li><a href="#">방문후기</a></li>
+              <li><a href="#">천문정보</a></li>
+              <li><a href="#">행사사진</a></li>
+            </ul>
+          </li>
+          <li class="li">
+            <a href="#">예약마당</a>
+            <ul class="submenu">
+              <li><a href="#">단체관람예약</a></li>
+              <li><a href="#">별음악회/시낭송회예약</a></li>
+              <li><a href="#">특별프로그램예약</a></li>
+              <li><a href="#">봉사활동예약</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+      </nav>
+      <!-- 슬라이드 -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide1">
+              <span>국내 최초</span>로 일반인을 대상으로 <br />
+              공개관측을 시연한 <span>1호 시민천문대</span><br /><br />
+              지자체가 운영하는 천문대 중 <br />
+              가장 많은 방문객이 찾는 천문대입니다.
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide2"><img src="./main_visual02.jpg" alt="" /></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide3">
+              <img src="./2365911_201910222223364960 (1).jpg" alt="" />
+            </div>
           </div>
         </div>
-        <div class="swiper-slide">
-          <div class="slide2"><img src="./main_visual02.jpg" alt="" /></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <!-- 슬라이드끝 -->
+      <section class="sec2">
+        <span class="y_title">관람시간</span>
+        <span>OPEN 14:00 / CLOSE 22:00 / 입장마감 21:50</span>
+        <span class="y_title">휴관일</span>
+        <span>매주 월요일 / 공휴일 다음날 / 명절 및 신정 연휴</span>
+        <span class="y_title">이용요금</span>
+        <span>무료</span>
+      </section>
+      <div class="sec3">
+        <button>예약하기</button>
+        <button>프로그램소개</button>
+        <button>행사일정</button>
+        <button>찾아오시는길</button>
+      </div>
+      <section class="sec4">
+        <div class="left">
+          <div class="title">
+            <a href="#">올해의 관측대상</a>
+            <a href="#" class="more">+더보기</a>
+          </div>
+          <!-- 슬라이드 -->
         </div>
-        <div class="swiper-slide">
-          <div class="slide3">
-            <img src="./2365911_201910222223364960 (1).jpg" alt="" />
+        <div class="right">
+          <div class="title">
+            <a href="#">천문우주소식</a>
+            <a href="#" class="more">+더보기</a>
+          </div>
+          <div class="line"></div>
+          <div class="detail">
+            <a href="#"
+              >50년 만에 다시 달로, 아르테미스 1호 발사 성공<span
+                >2022-11-30</span
+              ></a
+            >
+            <a href="#"
+              >50년 만에 다시 달로, 아르테미스 1호 발사 성공<span
+                >2022-11-30</span
+              ></a
+            >
+            <a href="#"
+              >50년 만에 다시 달로, 아르테미스 1호 발사 성공<span
+                >2022-11-30</span
+              ></a
+            >
+            <a href="#"
+              >50년 만에 다시 달로, 아르테미스 1호 발사 성공<span
+                >2022-11-30</span
+              ></a
+            >
+            <a href="#"
+              >50년 만에 다시 달로, 아르테미스 1호 발사 성공<span
+                >2022-11-30</span
+              ></a
+            >
           </div>
         </div>
+      </section>
+      <div class="sec5">
+        <button class="notice">공지사항</button>
+        <button class="qna">질문과 답변</button>
+        <button class="review">방문후기</button>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <div class="footbg">
+        <footer class="foot">
+          <div class="foot1">
+            <img src="./img/logo.png" alt="로고" /><br /><br />
+            <span class="foo1_text"
+              >(34128) 대전광역시 유성구 과학로 213-48 (신성동 7-13)<br />
+              TEL. 042-863-8762, 8763<br />
+              FAX. 042-863-8761<br />
+              Copyright © 2017 Daejeon Observatory. All rights reserved</span
+            >
+          </div>
+          <div class="foot2">
+            <span>천문대 이용안내</span>
+            <br /><br /><br /><br />
+            <p>
+              운영시간14:00 ~ 22:00 (입장마감은 21시 50분 까지 입니다.)<br />
+              휴관일매주 월요일, 공휴일 다음날, 명절 및 신정 연휴<br />
+              이용요금무료<br />
+              전화문의042-863-8762, 8763 (13:00 ~ 22:00)
+            </p>
+          </div>
+          <div class="foot3">
+            <span>바로가기 </span>
+            <button>기관사이트 바로가기▲</button>
+            <button>지역별천문대 바로가기▲</button>
+            <button>카페 바로가기▲</button>
+          </div>
+        </footer>
+      </div>
     </div>
-    <!-- 슬라이드끝 -->
-    <section class="sec2">
-      <span class="y_title">관람시간</span>
-      <span>OPEN 14:00 / CLOSE 22:00 / 입장마감 21:50</span>
-      <span class="y_title">휴관일</span>
-      <span>매주 월요일 / 공휴일 다음날 / 명절 및 신정 연휴</span>
-      <span class="y_title">이용요금</span>
-      <span>무료</span>
-    </section>
 
-    <div class="sec3">
-      <button>예약하기</button>
-      <button>프로그램소개</button>
-      <button>행사일정</button>
-      <button>찾아오시는길</button>
-    </div>
-
-    <section class="sec4">
-      <div class="left">
-        <a href="#">올해의 관측대상</a>
-        <a href="#">+더보기</a>
-        <!-- 슬라이드 -->
-      </div>
-      <div class="right">
-        <a href="#">천문우주소식</a>
-        <a href="#">+더보기</a>
-        <a href="#"
-          >50년 만에 다시 달로, 아르테미스 1호 발사 성공<span
-            >2022-11-16</span
-          ></a
-        >
-        <a href="#"
-          >50년 만에 다시 달로, 아르테미스 1호 발사 성공<span
-            >2022-11-16</span
-          ></a
-        >
-        <a href="#"
-          >50년 만에 다시 달로, 아르테미스 1호 발사 성공<span
-            >2022-11-16</span
-          ></a
-        >
-        <a href="#"
-          >50년 만에 다시 달로, 아르테미스 1호 발사 성공<span
-            >2022-11-16</span
-          ></a
-        >
-        <a href="#"
-          >50년 만에 다시 달로, 아르테미스 1호 발사 성공<span
-            >2022-11-16</span
-          ></a
-        >
-      </div>
-    </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script>
