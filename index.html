@@ -21,42 +21,60 @@
       src="https://kit.fontawesome.com/a76461436c.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".notice").click(function () {
+          $(".sec6").slideToggle("fast");
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".close").click(function () {
+          $(".popup_wrap").slideUp("slow");
+        });
+      });
+    </script>
   </head>
   <body>
-    <div class="popup">
-      <span
-        >토요 별 음악회 - 제 1,340 회 토요 별★음악회 / 2023-03-11 (토) 오후 8시
-        교육기간: 2023-03-11 ~ 2023-03-11 교육대상: 만 5세이상 교육인원: 60
-      </span>
-      <span
-        >전시실 전시해설 프로그램을 운영합니다. 하루 4회 10명씩 예약제로
-        운영하며 (
-        <p>단순 전시실관람은 예약 없이 가능합니다.</p>
-        ) 전시실 전시물에 대한 상세설명을 전문해설과 함께 진행합니다.</span
-      >
-      <span
-        >별자리 이야기가 있는 시낭송회 - 제278회 별빛 속에 시와 음악회
-        2023-03-14(화) 저녁 8시 교육기간:2023-03-14 ~ 2023-03-14 교육대상: 만
-        5세이상 교육인원 : 60</span
-      >
-      <span
-        >2023년도 매월 셋째 주 금요일 저녁 8시에 '황금특강'을 진행합니다.
-        천문우주에 관련된 재미있고 흥미로운 이야기를 들려주는 코너로천문에 관심
-        있는 분들은 누구나 참여 가능합니다.</span
-      >
-    </div>
-    <div class="close">
-      <div class="checkbox">
-        <input
-          type="checkbox"
-          value="none"
-          id="squaredFour"
-          name="check"
-          none
-        />
-        <label for="squaredFour">오늘하루 그만보기</label>
+    <div class="popup_wrap">
+      <div class="popup">
+        <span
+          >토요 별 음악회 - 제 1,340 회 토요 별★음악회 / 2023-03-11 (토) 오후
+          8시 교육기간: 2023-03-11 ~ 2023-03-11 교육대상: 만 5세이상 교육인원:
+          60
+        </span>
+        <span
+          >전시실 전시해설 프로그램을 운영합니다. 하루 4회 10명씩 예약제로
+          운영하며 (
+          <p>단순 전시실관람은 예약 없이 가능합니다.</p>
+          ) 전시실 전시물에 대한 상세설명을 전문해설과 함께 진행합니다.</span
+        >
+        <span
+          >별자리 이야기가 있는 시낭송회 - 제278회 별빛 속에 시와 음악회
+          2023-03-14(화) 저녁 8시 교육기간:2023-03-14 ~ 2023-03-14 교육대상: 만
+          5세이상 교육인원 : 60</span
+        >
+        <span
+          >2023년도 매월 셋째 주 금요일 저녁 8시에 '황금특강'을 진행합니다.
+          천문우주에 관련된 재미있고 흥미로운 이야기를 들려주는 코너로천문에
+          관심 있는 분들은 누구나 참여 가능합니다.</span
+        >
       </div>
-      <span>닫기</span>
+      <div class="popup_close">
+        <div class="checkbox">
+          <input
+            type="checkbox"
+            value="none"
+            id="squaredFour"
+            name="check"
+            none
+          />
+          <label for="squaredFour">오늘하루 그만보기</label>
+        </div>
+        <span class="close">닫기</span>
+      </div>
     </div>
     <div class="bgimg">
       <div class="tnb">
@@ -106,7 +124,11 @@
             </ul> -->
           </li>
         </ul>
-        <i class="fa-solid fa-bars"></i>
+        <div class="ham">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
       <!-- 슬라이드 -->
       <div class="swiper mySwiper">
@@ -141,10 +163,16 @@
         <span>무료</span>
       </section>
       <div class="sec3">
-        <button>예약하기</button>
-        <button>프로그램소개</button>
-        <button>행사일정</button>
-        <button>찾아오시는길</button>
+        <a href="./sub.html"
+          ><button><img src="./img/예약.png" alt="" /> 예약하기</button></a
+        >
+        <button>
+          <img src="./img/프로그램소개.png" alt="" /> 프로그램소개
+        </button>
+        <button><img src="./img/행사일정.png" alt="" /> 행사일정</button>
+        <button>
+          <img src="./img/찾아오시는길.png" alt="" /> 찾아오시는길
+        </button>
       </div>
       <section class="sec4">
         <div class="left">
@@ -165,22 +193,22 @@
               >50년 만에 다시 달로, 아르테미스 1호 발사 성공<span
                 >2022-11-30</span
               ></a
-            >
+            ><br /><br />
             <a href="#"
               >50년 만에 다시 달로, 아르테미스 1호 발사 성공<span
                 >2022-11-30</span
               ></a
-            >
+            ><br /><br />
             <a href="#"
               >50년 만에 다시 달로, 아르테미스 1호 발사 성공<span
                 >2022-11-30</span
               ></a
-            >
+            ><br /><br />
             <a href="#"
               >50년 만에 다시 달로, 아르테미스 1호 발사 성공<span
                 >2022-11-30</span
               ></a
-            >
+            ><br /><br />
             <a href="#"
               >50년 만에 다시 달로, 아르테미스 1호 발사 성공<span
                 >2022-11-30</span
@@ -194,6 +222,25 @@
         <button class="qna">질문과 답변</button>
         <button class="review">방문후기</button>
       </div>
+      <section class="sec6_wrap">
+        <div class="sec6">
+          <a href="#" class="more">+더보기</a>
+          <div class="line"></div>
+          <div class="sec6_title">
+            <a href="#">3월 1일 개관, 2일 휴관합니다. <span>2023-02-28</span></a
+            ><br /><br />
+            <a href="#">3월 1일 개관, 2일 휴관합니다. <span>2023-02-28</span></a
+            ><br /><br />
+            <a href="#">3월 1일 개관, 2일 휴관합니다. <span>2023-02-28</span></a
+            ><br /><br />
+            <a href="#">3월 1일 개관, 2일 휴관합니다. <span>2023-02-28</span></a
+            ><br /><br />
+            <a href="#"
+              >3월 1일 개관, 2일 휴관합니다. <span>2023-02-28</span></a
+            >
+          </div>
+        </div>
+      </section>
       <div class="footbg">
         <footer class="foot">
           <div class="foot1">
@@ -233,6 +280,13 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+      });
+    </script>
+    <script>
+      const $ham = document.querySelector(".ham");
+      const $menu = document.querySelector(".menu");
+      $ham.addEventListener("click", function () {
+        $menu.classList.toggle("on");
       });
     </script>
   </body>
